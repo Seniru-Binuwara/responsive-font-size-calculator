@@ -21,15 +21,10 @@
     </div>
   </header>
   <div class="main">
-
-    <!-- ═══ SIDEBAR ═══ -->
     <aside class="sidebar">
-
-      <!-- Viewports -->
       <div class="section">
         <div class="section-label-row">
           <div class="section-label" id="vp-section-label">Viewport Range</div>
-          <!-- vp unit toggle: rem | px -->
           <div class="radio-group vp-unit-group">
             <div class="radio-option">
               <input type="radio" name="vp-unit" id="vp-unit-rem" value="rem" checked>
@@ -52,11 +47,8 @@
           </div>
         </div>
       </div>
-
-      <!-- Viewport Presets -->
       <div class="section">
         <div class="section-label" id="label-vp">Viewport Presets
-          <!-- rem-base toggle lives here, dims when vp unit = px -->
           <label class="toggle-wrap" id="rembase-wrap" title="62.5% root font-size — 1rem = 10px">
             <input type="checkbox" id="rem-base-10" checked>
             <div class="toggle-track"><div class="toggle-thumb"></div></div>
@@ -82,8 +74,6 @@
           <button class="btn btn-ghost" style="font-size:11px;padding:5px 10px;" data-preset="478-1920">478–1920px</button>
         </div>
       </div>
-
-      <!-- Output Unit -->
       <div class="section">
         <div class="section-label">Output Unit</div>
         <div class="radio-group unit-group">
@@ -97,8 +87,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Output Mode -->
       <div class="section">
         <div class="section-label-row">
           <div class="section-label">Output Mode</div>
@@ -109,8 +97,6 @@
           </label>
         </div>
       </div>
-
-      <!-- Token Type -->
       <div class="section" id="section-type">
         <div class="section-label">Token Type</div>
         <div class="radio-group">
@@ -124,8 +110,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Naming Mode -->
       <div class="section" id="section-naming">
         <div class="section-label">Naming Mode</div>
         <div class="radio-group">
@@ -139,8 +123,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Prefix / Suffix -->
       <div class="section" id="section-prefix">
         <div class="section-label">Prefix &amp; Suffix</div>
         <div class="input-row">
@@ -154,8 +136,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Actions -->
       <div class="section" id="section-actions">
         <div class="section-label">Actions</div>
         <div class="btn-row">
@@ -163,14 +143,9 @@
           <button class="btn btn-swap" id="btn-swap" style="display: none;">⚠ Fix Inverted</button>
         </div>
       </div>
-
     </aside>
-
-    <!-- ═══ MAIN PANE ═══ -->
     <div class="pane">
       <div class="editor-area">
-
-        <!-- INPUT COL -->
         <div class="editor-col">
           <div class="col-header">
             <span class="col-title">Input Values (px)</span>
@@ -189,34 +164,28 @@
             <span class="val">max</span><span class="u">rem</span>)
           </div>
         </div>
-
-        <!-- OUTPUT COL -->
         <div class="editor-col">
           <div class="col-header">
             <span class="col-title" id="output-col-title">Output CSS Variables</span>
             <button class="btn btn-copy" id="btn-copy">Copy</button>
           </div>
           <div class="output-wrap">
-            <textarea id="output" readonly aria-label="Generated CSS Output"></textarea>          </div>
+            <textarea id="output" readonly aria-label="Generated CSS Output"></textarea></div>
           <div class="output-highlights" id="output-highlights"></div>
         </div>
-
       </div>
-
-      <!-- STATUS BAR -->
       <div class="statusbar">
         <div class="status-item">
           <div class="status-dot" id="status-dot"></div>
           <span id="status-text">Ready</span>
         </div>
         <div class="spacer"></div>
-        <span class="pill" id="status-vo-badge"  style="display:none">values only</span>
-        <span class="pill px"                     id="status-unit-badge"></span>
+        <span class="pill" id="status-vo-badge" style="display:none">values only</span>
+        <span class="pill px" id="status-unit-badge"></span>
         <span id="status-vp">—</span>
         <span id="status-rembase" style="opacity:.7">1rem=10px</span>
       </div>
     </div>
-
   </div>
 </div>
 </main>
