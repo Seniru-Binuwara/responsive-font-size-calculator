@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://seniru-binuwara.github.io/responsive-font-size-calculator/sitemap.xml
